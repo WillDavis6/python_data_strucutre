@@ -8,6 +8,7 @@ def list_manipulation(lst, command, location, value):
     elif command == 'add' and location == 'beginning':
         print(lst.insert(value, 0))
         return lst.insert(value, 0)
+    
     elif command == 'add' and location == 'end':
         print(lst.append(value))
         return lst.append(value)
