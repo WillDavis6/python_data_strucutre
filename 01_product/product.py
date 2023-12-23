@@ -1,4 +1,5 @@
 def product(a, b):
+   
     return a * b
     
     """Return product of a and b.
@@ -9,3 +10,4 @@ def product(a, b):
         >>> product(2, -2)
         -4
     """
+

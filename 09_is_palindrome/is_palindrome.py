@@ -1,4 +1,15 @@
+
+
 def is_palindrome(phrase):
+    upper = phrase.upper()
+    letters = list(phrase)
+    letters.reverse()
+    reversed = ''.join(letters)
+    reversed_upper = reversed.upper()
+    if reversed_upper == upper:
+        return True
+    else:
+        return False
     """Is phrase a palindrome?
 
     Return True/False if phrase is a palindrome (same read backwards and
