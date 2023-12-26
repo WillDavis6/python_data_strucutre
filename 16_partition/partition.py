@@ -1,4 +1,5 @@
 def partition(lst, fn):
+    lst.splice()
     """Partition lst by predicate.
      
      - lst: list of items
