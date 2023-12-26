@@ -1,4 +1,15 @@
 def friend_date(a, b):
+    interests1 = a[2]
+    interests2 = b[2]
+    set_1 = set(interests1)
+    set_2 = set(interests2)
+ 
+    if (set_1 & set_2) != set():
+        
+        return True
+    else:
+       
+       return False
     """Given two friends, do they have any hobbies in common?
 
     - a: friend #1, a tuple of (name, age, list-of-hobbies)
