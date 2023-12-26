@@ -1,5 +1,19 @@
+#def fn(entry):
+ #   if entry % 2 == 0:
+  #      return True
+ #   else:
+ #       return False
+
 def partition(lst, fn):
-    lst.splice()
+    lst1 = []
+    lst2 = []
+    for item in lst:
+        if fn(item) == True:
+            lst1.append(item)
+        elif fn(item) == False:
+            lst2.append(item)
+    return lst1, lst2
+
     """Partition lst by predicate.
      
      - lst: list of items

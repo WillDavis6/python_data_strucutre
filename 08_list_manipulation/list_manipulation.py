@@ -1,3 +1,4 @@
+# need to fix the add, returns None
 def list_manipulation(lst, command, location, value):
     if command == 'remove' and location == 'beginning':
        
@@ -6,12 +7,12 @@ def list_manipulation(lst, command, location, value):
       
         return lst.pop()
     elif command == 'add' and location == 'beginning':
-        print(lst.insert(value, 0))
-        return lst.insert(value, 0)
+        lst.insert(0, value)
+        return lst
     
     elif command == 'add' and location == 'end':
-        print(lst.append(value))
-        return lst.append(value)
+        lst.append(value)
+        return lst
    
    
     """Mutate lst to add/remove from beginning or end.

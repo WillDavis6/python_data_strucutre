@@ -1,14 +1,17 @@
 def flip_case(phrase, to_swap):
-    phrase_list = list(phrase)
-    for letter in phrase_list:
-        if letter.upper() == to_swap:
-            print(phrase_list(letter))
-            letter.lower()
-        elif letter.lower() == to_swap:
-            letter.upper()
+    lower_to_swap = to_swap.lower()
+    new_phrase = []
+    for letter in phrase:
+        if letter.lower() == lower_to_swap:
+            if letter == lower_to_swap:
+                new_phrase.append(letter.upper())
+            elif letter != lower_to_swap:
+                new_phrase.append(letter.lower())
         else:
-            letter
-    return "".join(phrase_list)
+            new_phrase.append(letter)
+    return ''.join(new_phrase)
+            
+        
 
         
     """Flip [to_swap] case each time it appears in phrase.
