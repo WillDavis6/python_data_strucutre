@@ -1,4 +1,9 @@
 def sum_pairs(nums, goal):
+    for num in nums:
+        for num_2 in nums:
+            if num + num_2 == goal:
+                return goal
+    return '()'
     """Return tuple of first pair of nums that sum to goal.
 
     For example:
