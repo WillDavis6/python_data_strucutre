@@ -1,4 +1,12 @@
 def includes(collection, sought, start=None):
+    if sought in collection:
+        if collection.index(sought) == start:
+            print(collection.index(sought))
+            return True
+        elif collection.index(sought) != start:
+            return False
+    else:
+        return False
     """Is sought in collection, starting at index start?
 
     Return True/False if sought is in the given collection:
