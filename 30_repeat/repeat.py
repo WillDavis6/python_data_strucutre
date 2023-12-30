@@ -1,4 +1,11 @@
 def repeat(phrase, num):
+    if num == -1:
+        return None
+    elif type(num) == str:
+        return None
+    else:
+        value = num * phrase
+        return value
     """Return phrase, repeated num times.
 
         >>> repeat('*', 3)
