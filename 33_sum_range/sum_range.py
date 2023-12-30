@@ -1,4 +1,18 @@
+
 def sum_range(nums, start=0, end=None):
+    if end == None:
+        end = 100000000
+        new_nums = nums[start:end+1]
+        total = 0
+        for num in new_nums:
+            total += num
+        return total
+    elif end != None:
+        new_nums = nums[start:end+1]
+        total = 0
+        for num in new_nums:
+            total += num
+        return total
     """Return sum of numbers from start...end.
 
     - start: where to start (if not provided, start at list start)
