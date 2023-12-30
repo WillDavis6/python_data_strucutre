@@ -1,4 +1,6 @@
 def two_list_dictionary(keys, values):
+    new_dict = {key: value for key, value in zip(keys, values)}
+    return new_dict
     """Given keys and values, make dictionary of those.
     
         >>> two_list_dictionary(['x', 'y', 'z'], [9, 8, 7])
